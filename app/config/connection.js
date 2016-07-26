@@ -8,7 +8,7 @@ var mysql = require('mysql');
 var source = {
 
     localhost: {
-        port: 3306,
+        port: 0,
         host: 'localhost',
         user: 'root',
         password: "Njmitx123",
@@ -16,13 +16,18 @@ var source = {
     },
     jawsDB: {
 
-        // TODO: Add your JawsDB connection info here
+        port:3306,
+        host:'g8r9w9tmspbwmsyo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: "r5um065higffzlj1",
+        password: "ggggemc7woceu29d",
+        database:"b4ulaosugsyqc959"
+
     }
 }
 
 
 // TODO: connect your jawsDB connection witht he mysql connection.
-var connection = mysql.createConnection( //enter connection here);
+var connection = mysql.createConnection( souce.jawsDB);
 
 
 
